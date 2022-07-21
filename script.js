@@ -64,3 +64,13 @@ $(document).ready(function () {
         console.log(item, testLine);
     }
 });
+
+
+
+
+const element = document.querySelector('.right-line');
+const observer = new IntersectionObserver(entries => {
+  element.classList.toggle( 'animation', entries[0].isIntersecting );
+});
+
+observer.observe( element );
