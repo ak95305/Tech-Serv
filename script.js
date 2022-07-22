@@ -60,7 +60,15 @@ $(document).ready(function () {
         }
         $('#counter').html(item + " / " + items)
         let testLine = document.querySelector('.counter-line');
-        testLine.style.width = (item/items)*testLine.getAttribute('max-width') + 'px';
+        let maxWidth;
+        if(screen.width>=767){
+            maxWidth = 500;
+        } else if(screen.width>=425 && screen.width<=768){
+            maxWidth = 225;
+        } else{
+            maxWidth = 125;
+        }
+        testLine.style.width = (item/items)*maxWidth + 'px';
         console.log(item, testLine);
     }
 });
