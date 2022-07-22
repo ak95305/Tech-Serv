@@ -716,9 +716,9 @@ img {
 
 .partners-logo .logo-box img {
     height: 60px;
-    width: auto;
     display: block;
     margin: auto;
+    object-fit: contain;
 }
 
 .partners-logo .logo-box img:nth-child(1) {
@@ -729,6 +729,7 @@ img {
 .partners-logo .logo-box {
     height: 60px;
     overflow: hidden;
+    margin: 20px 0;
 }
 
 .partners-logo .logo-box:hover img:nth-child(1) {
@@ -773,6 +774,7 @@ img {
     padding: 10px 10px 10px 20px;
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .email-input input {
@@ -911,6 +913,20 @@ footer ul>li {
             height: 50px;
         }
     }
+    .email-box h2 {
+        font-size: 20px;
+    }
+    .email-box p {
+        font-size: 12px;
+    }
+    .email-input input {
+        font-size: 14px;
+    }
+    .email-input a {
+        min-width: 50px;
+        max-width: 50px;
+        height: 50px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -954,6 +970,9 @@ footer ul>li {
     }
     .testimonials-sec .quote {
         right: 50px;
+    }
+    .email-box{
+        padding: 50px 30px;
     }
 }
 
