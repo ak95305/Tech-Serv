@@ -46,6 +46,27 @@ img {
     width: fit-content;
 }
 
+/* body .cursor {
+    pointer-events: none;
+}
+
+body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+body .cursor__ball circle {
+    fill: #f7f8fa;
+}
+
+header,
+header *, 
+.hero-sec, .hero-sec * {
+    cursor: none !important;
+} */
 
 /* Header */
 .header-bar {
@@ -913,15 +934,19 @@ footer ul>li {
             height: 50px;
         }
     }
+
     .email-box h2 {
         font-size: 20px;
     }
+
     .email-box p {
         font-size: 12px;
     }
+
     .email-input input {
         font-size: 14px;
     }
+
     .email-input a {
         min-width: 50px;
         max-width: 50px;
@@ -968,10 +993,12 @@ footer ul>li {
     .overview {
         height: unset;
     }
+
     .testimonials-sec .quote {
         right: 50px;
     }
-    .email-box{
+
+    .email-box {
         padding: 50px 30px;
     }
 }
@@ -984,17 +1011,21 @@ footer ul>li {
     .over-img .bg-dots {
         width: 140px;
     }
+
     .testimonials-sec .quote {
         right: 50px;
         top: 10px;
     }
-    .testimonials-sec .quote svg{
+
+    .testimonials-sec .quote svg {
         width: 50px;
     }
+
     .testimonials-sec h1 {
         font-size: 35px;
     }
-    .right-line{
+
+    .right-line {
         right: 30px;
     }
 }

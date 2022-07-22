@@ -1,3 +1,4 @@
+// HAMBURGER
 let hamburgerIcon = document.querySelector('.hamburger');
 let navListBox = document.querySelector('.nav-list');
 let headerBar = document.querySelector('.header-bar');
@@ -12,6 +13,8 @@ hamburgerIcon.addEventListener('click', () => {
 
 
 
+
+// NAV LINKS HOVER EFFECT
 let navLinkList = document.querySelectorAll('.nav-links li');
 let navLinks = document.querySelector('.nav-links');
 navLinkList.forEach((i) => {
@@ -26,9 +29,13 @@ navLinkList.forEach((i) => {
 });
 
 
+
+// ANIMATION ON SCROLL
 AOS.init();
 
 
+
+// PARALLAX CIRCLES
 var scene1 = document.getElementById('crcl1');
 var parallax1 = new Parallax(scene1);
 var scene2 = document.getElementById('crcl2');
@@ -39,7 +46,7 @@ var parallax3 = new Parallax(scene3);
 
 
 
-
+// OWL CAROUSEL TESIMONIALS
 $(document).ready(function () {
     $(".test-carousel").owlCarousel({
         items: 1,
@@ -69,16 +76,55 @@ $(document).ready(function () {
             maxWidth = 125;
         }
         testLine.style.width = (item/items)*maxWidth + 'px';
-        console.log(item, testLine);
     }
 });
 
 
 
 
+// TESTIMONIALS ANIMATION
 const element = document.querySelector('.right-line');
 const observer = new IntersectionObserver(entries => {
   element.classList.toggle( 'animation', entries[0].isIntersecting );
 });
 
 observer.observe( element );
+
+
+
+
+
+// const bigBall = document.querySelector('.cursor__ball--big');
+// const smallBall = document.querySelector('.cursor__ball--small');
+// const hoverables = document.querySelectorAll('.hoverable');
+
+// // Listeners
+// document.body.addEventListener('mousemove', onMouseMove);
+// for (let i = 0; i < hoverables.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+//   hoverables[i].addEventListener('mouseenter', onMouseHover);
+//   hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+// }
+
+// // Move the cursor
+// window.CP.exitedLoop(0);function onMouseMove(e) {
+//   TweenMax.to(bigBall, .4, {
+//     x: e.pageX - 15,
+//     y: e.pageY - 15 });
+
+//   TweenMax.to(smallBall, .1, {
+//     x: e.pageX - 5,
+//     y: e.pageY - 7 });
+
+// }
+
+// // Hover an element
+// function onMouseHover() {
+//   TweenMax.to(bigBall, .3, {
+//     scale: 40 });
+
+// }
+// function onMouseHoverOut() {
+//   TweenMax.to(bigBall, .3, {
+//     scale: 10 });
+
+// }
